@@ -1,0 +1,41 @@
+.account-details {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 5% 4%;
+}
+
+.account-info {
+  margin-bottom: 20px;
+}
+
+.account-info p {
+  margin: 8px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.actions .btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.actions .btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.actions .btn-danger {
+  background-color: #dc3545;
+  color: white;
+}

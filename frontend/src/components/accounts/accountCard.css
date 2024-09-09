@@ -1,0 +1,62 @@
+.account-card {
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .account-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .account-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .account-card p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .account-card__value {
+    font-weight: bold;
+  }
+  
+  .account-card__button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .account-card__button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo específico para contas a pagar */
+  .account-card.pay {
+    background-color: #f8d7da;
+    border-left: 5px solid #f5c6cb;
+  }
+  
+  /* Estilo específico para contas a receber */
+  .account-card.receive {
+    background-color: #d4edda;
+    border-left: 5px solid #c3e6cb;
+  }
+/* Aviso de conta atrasada */
+.account-card__late-warning {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+    
