@@ -41,6 +41,7 @@ function Index() {
 
   async function getAccounts() {
     const response = await accountGateway?.getAllAccountsByUser();
+    console.log(response?.accounts[0].value())
     setAccounts(response?.accounts ?? []);
     setFilteredAccounts(response?.accounts ?? []);
   }

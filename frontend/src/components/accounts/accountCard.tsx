@@ -27,7 +27,6 @@ function AccountCard({ account }: AccountCardProps) {
   const handlePayment = async () => {
     try {
       const response = await accountGateway?.finshAccount(account.uuid());
-
       setMsg({ msg: response?.message, status: response?.status });
       
       if (response?.status <= 300) {
@@ -76,11 +75,11 @@ function AccountCard({ account }: AccountCardProps) {
       }
       {account.isDone() === true&&
       <p className="account-card__late-warning">
-      Conta {account.accountType() === "receive" ? "foi paga" : "foi recebida"}
+      Conta {account.accountType() === "receive" ? "foi recebida" : "foi paga"}
       </p>
       }
       <p className="account-card__description">{account.description()}</p>
-      <p className="account-card__value">Valor: R$ {account.value().toFixed(2)}</p>
+      <p className="account-card__value">Valor: R$ {account.value()}</p>
       <p className="account-card__expiration">
         Data de Expiração: {new Date(account.expirationDate()).toLocaleDateString()}
       </p>

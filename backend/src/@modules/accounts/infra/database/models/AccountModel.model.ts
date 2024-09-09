@@ -15,7 +15,7 @@ export class AccountModel {
   name: string;
   @Column()
   description: string;
-  @Column()
+  @Column("double precision")
   value: number;
   @Column({ name: "expiration_date" })
   expirationDate: Date;
